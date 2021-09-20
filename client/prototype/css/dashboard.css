@@ -12,6 +12,14 @@ body {
 	min-height: 100vh;
 }
 
+a {
+	text-decoration: none;
+}
+
+.active {
+	text-decoration: underline;
+}
+
 li {
 	list-style: none;
 }
@@ -56,6 +64,14 @@ button {
 
 	position: sticky;
 	top: 0;
+}
+
+.header a {
+	color: white;
+}
+
+.header a:hover {
+	color: #aeafa6;
 }
 
 .header__nav {
@@ -105,6 +121,18 @@ button {
 
 .main__hero h2 {
 	font-size: 3rem;
+}
+
+/* ---------- filter ---------- */
+.filter {
+	padding: 8px;
+	background-color: #1d3b50;
+	color: white;
+}
+
+.filter__container {
+	display: flex;
+	justify-content: space-between;
 }
 
 /* ---------- card ---------- */
@@ -168,4 +196,12 @@ button {
 
 .footer .narrow {
 	margin: 0;
+}
+
+.footer a {
+	color: white;
+}
+
+.footer a:hover {
+	color: #aeafa6;
 }
