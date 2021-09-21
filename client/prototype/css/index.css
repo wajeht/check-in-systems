@@ -12,7 +12,10 @@
 	color: white;
 }
 
-.index-page .narrow {
+.index-page .narrow,
+.check-out-page .narrow,
+.check-in-page .narrow,
+.guest-page .narrow {
 	max-width: 90%;
 	margin: 0;
 }
