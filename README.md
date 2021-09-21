@@ -2,16 +2,24 @@
 
 # <p align="center">check-in systems</p>
 
-<p align="center"><em>❗❗❗ THIS PROJECT IS UNDNER DEVELOPMENT❗❗❗</em></p>
+<p align="center">check-in systems for local community college computer lab to track student visit during covid period!</p>
 
-<p align="center">check-in systems for tracking visits</p>
-
-# About
-
-Currently in the process of build check-in systems for local computer lab to track student visit during covid period!
-
-# Demo
+# Prototype
 
 ```
 https://check-in-systems.netlify.app/
 ```
+
+# Contribute
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
+
+# License
+
+Distributed under the MIT License © [wajeht](https://www.github.com/wajeht/). See LICENSE for more information.
