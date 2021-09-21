@@ -7,7 +7,7 @@
 
 /* ---------- hero-home ---------- */
 .main__hero-home {
-	height: calc(100vh - 205px);
+	min-height: calc(100vh - 204px);
 	background: url(/img/background.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -29,6 +29,14 @@
 }
 
 /* ---------- card ---------- */
+.main__hero__card a {
+	color: black;
+}
+
+.main__hero__card a:hover {
+	color: #1d3b50;
+}
+
 .main__hero__card {
 	padding: 25px;
 	width: 80%;
@@ -45,6 +53,15 @@
 		flex-direction: column;
 	}
 
+	.main__hero-home {
+		min-height: 100vh;
+		padding: 5rem 0;
+	}
+
+	.main__hero-home h2 {
+		font-size: 2rem;
+	}
+
 	.main__hero-home__content {
 		display: flex;
 		justify-content: center;
@@ -55,8 +72,20 @@
 	.main__hero__card {
 		margin-top: 2rem;
 	}
+
+	.footer {
+		height: 15rem;
+	}
 }
 
+#lock {
+	font-size: 10rem;
+	color: #1d3b50;
+	margin: 25px auto;
+	border-radius: 2px;
+}
+
+/* ---------- input ---------- */
 input[type='text'],
 select {
 	width: 100%;
@@ -81,11 +110,4 @@ input[type='submit'] {
 
 input[type='submit']:hover {
 	background-color: #2c5773;
-}
-
-#lock {
-	font-size: 10rem;
-	color: #1d3b50;
-	margin: 25px auto;
-	border-radius: 2px;
 }
