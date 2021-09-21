@@ -61,6 +61,48 @@ button {
 	justify-content: space-between;
 }
 
+.center-v-h {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* ---------- input ---------- */
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+select {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type='text']:focus,
+input[type='tel']:focus {
+	background-color: #c7dff1;
+	outline: none;
+}
+
+input[type='submit'] {
+	width: 100%;
+	background-color: #1d3b50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type='submit']:hover {
+	background-color: #2c5773;
+}
+
 /* ---------- header ---------- */
 .header {
 	background-color: #032233;
@@ -129,7 +171,7 @@ button {
 
 /* ---------- filter ---------- */
 .filter {
-	padding: 8px;
+	/* padding: 8px; */
 	background-color: #1d3b50;
 	color: white;
 }

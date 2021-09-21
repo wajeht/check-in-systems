@@ -46,7 +46,7 @@
 						</div>
 					</div>
 
-					<!-- ---------- check-in-student ---------- -->
+					<!-- ---------- check-in-guest ---------- -->
 					<div class="main__hero__card">
 						<div id="lock">
 							<div class="center-v-h">
@@ -59,14 +59,23 @@
 						</div>
 						<div>
 							<form action="#">
-								<label for="fname">Check-in with student ID</label>
-								<input type="text" placeholder="student ID" required />
+								<label for="guest">Check-in as guest</label>
+								<input type="text" placeholder="full name" required />
+								<input type="email" placeholder="email" required />
+								<input
+									type="tel"
+									id="phone"
+									name="phone"
+									pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+									placeholder="phone: 123-456-7890"
+									required
+								/>
 								<input type="submit" value="check in" />
 							</form>
 						</div>
 						<div class="splitter space-between">
 							<a href="/check-out.html">check-out</a>
-							<a href="/check-in-as-guest.html">check-in as guest</a>
+							<a href="/">check-in as student</a>
 						</div>
 					</div>
 				</div>

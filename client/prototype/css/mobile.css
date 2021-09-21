@@ -1,0 +1,29 @@
+@media (max-width: 50em) {
+	.main .splitter {
+		flex-direction: column;
+	}
+
+	.main__hero-home {
+		min-height: 100vh;
+		padding: 5rem 0;
+	}
+
+	.main__hero-home h2 {
+		font-size: 2rem;
+	}
+
+	.main__hero-home__content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.main__hero__card {
+		margin-top: 2rem;
+	}
+
+	.footer {
+		height: 15rem;
+	}
+}
