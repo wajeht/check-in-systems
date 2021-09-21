@@ -29,31 +29,40 @@
 		<!-- ---------- main ---------- -->
 		<main class="main">
 			<!-- ---------- hero  ---------- -->
-			<section class="main__hero">
-				<div class="main__hero-content">
-					<div>
-						<h2>check-in system</h2>
-					</div>
-					<div class="narrow">
-						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga eum
-							exercitationem ipsam, non dicta, pariatur aliquid sint maxime
-							natus architecto possimus voluptatum minus ab rem autem magnam
-							molestias impedit odio.
-						</p>
-					</div>
-				</div>
-			</section>
-
-			<section class="check-in">
-				<div class="container">
-					<div class="check-in__card">
+			<section class="main__hero-home">
+				<div class="container splitter">
+					<div class="main__hero-home__content">
 						<div>
-							<label for="id">student id: </label>
-							<input type="text" />
+							<h2>check-in system</h2>
 						</div>
-						<div>
-							<input type="button" value="check in" />
+						<div class="narrow">
+							<p>
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+								eum exercitationem ipsam, non dicta, pariatur aliquid sint
+								maxime natus architecto possimus voluptatum minus ab rem autem
+								magnam molestias impedit odio.
+							</p>
+						</div>
+					</div>
+
+					<div class="main__hero__card">
+						<div class="center-v-h">
+							<div id="lock">
+								<span
+									class="iconify"
+									data-icon="mdi:account-lock"
+									data-inline="false"
+								></span>
+							</div>
+							<div>
+								<label for="fname">Check-in with student ID</label>
+								<input type="text" placeholder="Your student ID" />
+								<input type="submit" value="check in" />
+							</div>
+						</div>
+						<div class="splitter space-between">
+							<p>check-out</p>
+							<p>check-in as geust</p>
 						</div>
 					</div>
 				</div>
