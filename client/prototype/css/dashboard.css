@@ -159,7 +159,7 @@ input[type='submit']:hover {
 
 .main__hero {
 	height: 500px;
-	background: url(/img/background.jpeg);
+	background: url(/img/background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
