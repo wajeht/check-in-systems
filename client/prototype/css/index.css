@@ -25,6 +25,14 @@
 }
 
 /* ---------- card ---------- */
+.index-page .main__hero__card,
+.check-in-page .main__hero__card,
+.check-out-page .main__hero__card,
+.guest-page .main__hero__card,
+.null {
+	max-width: 410px;
+}
+
 .main__hero__card a {
 	color: black;
 }
