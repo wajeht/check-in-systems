@@ -57,6 +57,10 @@ button {
 	margin: auto;
 }
 
+.space-between {
+	justify-content: space-between;
+}
+
 /* ---------- header ---------- */
 .header {
 	background-color: #032233;
