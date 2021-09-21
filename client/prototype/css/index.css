@@ -1,7 +1,7 @@
 /* ---------- hero-home ---------- */
 .main__hero-home {
 	min-height: calc(100vh - 208px);
-	background: url(/img/background.jpeg);
+	background: url(/img/background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
