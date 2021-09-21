@@ -1,4 +1,4 @@
-<p align="center"><img style="width: 100%; height: 300px; object-fit: cover; object-position: 20% 10%;" src="https://raw.githubusercontent.com/wajeht/check-in-systems/main/.github/github_readme_screenshot.jpg"></p>
+<p align="center"><img style="width: 100%;" src="https://raw.githubusercontent.com/wajeht/check-in-systems/355a4b9cd54984132779a4be1861ab34dd949d7f/.github/github_readme_screenshot.jpg"></p>
 
 # <p align="center">check-in systems</p>
 
