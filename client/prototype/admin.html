@@ -45,13 +45,17 @@
 			</div>
 			<div class="admin__content">
 				<div class="admin__content-container">
-					<div class="card">
-						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
-							incidunt impedit quia necessitatibus ullam reprehenderit
-							distinctio, aut maxime velit odit, cum repellendus, fugiat facilis
-							molestiae ratione delectus ad eius consequuntur?
-						</p>
+					<div class="splitter">
+						<div class="card">
+							<div class="res-chart">
+								<canvas id="bar-chart" width="800" height="450"></canvas>
+							</div>
+						</div>
+						<div class="card">
+							<div class="res-chart">
+								<canvas id="pie-chart" width="800" height="450"></canvas>
+							</div>
+						</div>
 					</div>
 					<div class="card">
 						<p>
@@ -60,25 +64,97 @@
 							distinctio, aut maxime velit odit, cum repellendus, fugiat facilis
 							molestiae ratione delectus ad eius consequuntur?
 						</p>
-					</div>
-					<div class="card">
+						<br />
 						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
-							incidunt impedit quia necessitatibus ullam reprehenderit
-							distinctio, aut maxime velit odit, cum repellendus, fugiat facilis
-							molestiae ratione delectus ad eius consequuntur?
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+							Voluptate, facere laudantium! Ullam quod nemo temporibus. Et
+							corporis ad neque ab recusandae distinctio enim porro molestias
+							fuga esse. Adipisci, incidunt corrupti? Lorem ipsum, dolor sit
+							amet consectetur adipisicing elit. Quidem blanditiis, et quibusdam
+							obcaecati quam facere officia labore, eos minima perspiciatis ad?
+							Pariatur et aperiam dolorum eos optio, ducimus nihil ullam?
 						</p>
-					</div>
-					<div class="card">
-						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
-							incidunt impedit quia necessitatibus ullam reprehenderit
-							distinctio, aut maxime velit odit, cum repellendus, fugiat facilis
-							molestiae ratione delectus ad eius consequuntur?
-						</p>
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
+						<br />
 					</div>
 				</div>
 			</div>
 		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+		<script>
+			new Chart(document.getElementById('bar-chart'), {
+				type: 'bar',
+				data: {
+					labels: [
+						'Africa',
+						'Asia',
+						'Europe',
+						'Latin America',
+						'North America',
+					],
+					datasets: [
+						{
+							label: 'Population (millions)',
+							backgroundColor: [
+								'#3e95cd',
+								'#8e5ea2',
+								'#3cba9f',
+								'#e8c3b9',
+								'#c45850',
+							],
+							data: [2478, 5267, 734, 784, 433],
+						},
+					],
+				},
+				options: {
+					legend: { display: false },
+					title: {
+						display: true,
+						text: 'Predicted world population (millions) in 2050',
+					},
+				},
+			});
+		</script>
+
+		<script>
+			new Chart(document.getElementById('pie-chart'), {
+				type: 'pie',
+				data: {
+					labels: [
+						'Africa',
+						'Asia',
+						'Europe',
+						'Latin America',
+						'North America',
+					],
+					datasets: [
+						{
+							label: 'Population (millions)',
+							backgroundColor: [
+								'#3e95cd',
+								'#8e5ea2',
+								'#3cba9f',
+								'#e8c3b9',
+								'#c45850',
+							],
+							data: [2478, 5267, 734, 784, 433],
+						},
+					],
+				},
+				options: {
+					title: {
+						display: true,
+						text: 'Predicted world population (millions) in 2050',
+					},
+				},
+			});
+		</script>
 	</body>
 </html>
