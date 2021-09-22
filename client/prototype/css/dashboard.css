@@ -59,7 +59,7 @@ button {
 
 .container {
 	max-width: 1400px;
-	padding: 10px 20px;
+	padding: 10px 25px;
 	margin: auto;
 }
 
@@ -72,6 +72,17 @@ button {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+}
+
+#dark-blue {
+	background: white;
+	color: #1d3a50;
+	padding: 0 10px;
+	border-radius: 2px;
+}
+
+.title {
+	margin-bottom: 10px;
 }
 
 /* ---------- input ---------- */
