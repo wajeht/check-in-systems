@@ -45,6 +45,11 @@
 		margin-bottom: 0;
 	}
 
+	.admin .admin__sidebar-footer {
+		display: none;
+		background-color: red;
+	}
+
 	.admin__sidebar ul {
 		flex-direction: row;
 	}

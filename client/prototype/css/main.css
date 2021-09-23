@@ -217,6 +217,14 @@ input[type='submit']:hover {
 	margin-bottom: 20px;
 }
 
+.admin__sidebar-footer {
+	position: absolute;
+	bottom: 0;
+	text-align: right;
+	margin-bottom: 25px;
+	margin-left: 25px;
+}
+
 .admin__sidebar ul {
 	display: flex;
 	flex-direction: column;
