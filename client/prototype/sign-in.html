@@ -14,7 +14,7 @@
 		<header class="header">
 			<div class="container">
 				<nav class="header__nav">
-										<div class="header__logo">
+					<div class="header__logo">
 						<a href="/">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
@@ -58,20 +58,39 @@
 								></span>
 							</div>
 						</div>
-            <form  method="post" onsubmit="return signIn()">
-							<label for="email">admin@test.com</label>
-              <input type="email" placeholder="email" id="admin__email" required>
-							<label for="password">pass123</label>
-              <input type="password" placeholder="password" id="admin__password" required>
-              <input type="submit" value="sign in" id="admin__submit__button" onsubmit="return signIn();">
-              <div class="splitter space-between">
-                <div>
-                  <input type="checkbox" name="remember-me" id="remember-me" value="isRemember">
-                  <label for="remember-me">Remember me</label>
-                </div>
+						<form method="post" onsubmit="return signIn()">
+							<input
+								type="email"
+								placeholder="admin@test.com"
+								id="admin__email"
+								required
+							/>
+							<input
+								type="password"
+								placeholder="pass123"
+								id="admin__password"
+								required
+							/>
+							<input
+								type="submit"
+								value="sign in"
+								id="admin__submit__button"
+								onsubmit="return signIn();"
+							/>
+							<div class="splitter space-between">
+								<div>
+									<input
+										type="checkbox"
+										name="remember-me"
+										id="remember-me"
+										value="isRemember"
+									/>
+									<label for="remember-me">Remember me</label>
+								</div>
 								<a href="/forgot-password.html">forgot password?</a>
-              </div>
-            </form>
+							</div>
+						</form>
+					</div>
 				</div>
 			</section>
 		</main>
