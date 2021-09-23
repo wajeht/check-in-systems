@@ -192,12 +192,7 @@ input[type='submit']:hover {
 	display: flex;
 	background: #f9f9f9;
 	min-height: 100vh;
-	/* background: #1d3a50; */
-}
-
-.admin__content-container {
-	max-width: 1400px;
-	padding: 25px 25px;
+	background: #1d3a50;
 }
 
 /* ---------- sidebar ---------- */
@@ -249,6 +244,14 @@ input[type='submit']:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+
+.admin__content-container {
+	max-width: 1400px;
+	padding: 25px 25px;
+
+	height: 100vh;
+	overflow: scroll;
 }
 
 /* ---------- filter ---------- */

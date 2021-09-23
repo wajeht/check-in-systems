@@ -41,6 +41,11 @@
 		float: none;
 	}
 
+	.admin__content-container {
+		overflow: auto;
+		height: 100%;
+	}
+
 	.admin__sidebar-logo {
 		margin-bottom: 0;
 	}
