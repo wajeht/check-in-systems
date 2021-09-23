@@ -3,7 +3,12 @@
 		width: 100%;
 	}
 
+	header {
+		z-index: 2;
+	}
+
 	.main .splitter {
+		z-index: 1;
 		margin: 10px;
 	}
 
@@ -53,6 +58,7 @@
 
 	.privacy__card {
 		height: calc(100vh - 337px);
+		width: 100%;
 	}
 
 	.main__hero-home {
