@@ -128,6 +128,9 @@ input[type='submit']:hover {
 
 	position: sticky;
 	top: 0;
+
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+	z-index: 3;
 }
 
 .header a {
@@ -201,6 +204,8 @@ input[type='submit']:hover {
 	color: white;
 	width: 20%;
 	padding: 25px 25px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+	z-index: 3;
 }
 
 .admin__sidebar-content {
@@ -264,6 +269,28 @@ input[type='submit']:hover {
 .filter__container {
 	display: flex;
 	justify-content: space-between;
+}
+
+/* ---------- setting ---------- */
+.admin__content-setting {
+	/* background-color: #032134; */
+	background-color: white;
+	padding: 10px 25px;
+	border-radius: 2px;
+	position: sticky;
+	top: 0;
+	margin: 0 10px;
+	margin-bottom: 25px;
+
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+}
+
+#search_input {
+	width: 70%;
+}
+
+#search_btn {
+	width: 30%;
 }
 
 /* ---------- card ---------- */
