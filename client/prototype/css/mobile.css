@@ -1,11 +1,54 @@
-@media (max-width: 50em) {
+@media (max-width: 60em) {
+	.privacy-page .main,
+	.terms-page .main,
+	.null {
+		min-height: 100vh - 50rem;
+	}
+
+	.admin {
+		flex-direction: column;
+	}
+
+	.admin__content {
+		width: 100%;
+		min-height: calc(100vh - 56px);
+	}
+
+	.admin__sidebar {
+		top: 0;
+		position: sticky;
+		width: 100%;
+		padding: 10px 25px;
+	}
+
+	.admin__sidebar-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		float: none;
+	}
+
+	.admin__sidebar-logo {
+		margin-bottom: 0;
+	}
+
+	.admin__sidebar ul {
+		flex-direction: row;
+	}
+	.admin__sidebar li {
+		margin: 0 5px;
+	}
+
 	.main .splitter {
 		flex-direction: column;
 	}
 
+	.privacy__card {
+		height: calc(100vh - 337px);
+	}
+
 	.main__hero-home {
-		min-height: 100vh;
-		padding: 5rem 0;
+		min-height: calc(100vh - 296px);
 	}
 
 	.main__hero-home h2 {
@@ -17,10 +60,7 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-	}
-
-	.main__hero__card {
-		margin-top: 2rem;
+		margin-bottom: 1rem;
 	}
 
 	.footer {

@@ -2,8 +2,8 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	overflow-y: scroll;
-	scrollbar-width: none;
+	/* overflow-y: scroll; */
+	/* scrollbar-width: none; */
 }
 
 ::-webkit-scrollbar {
@@ -187,6 +187,62 @@ input[type='submit']:hover {
 	font-size: 3rem;
 }
 
+/* ---------- admin ---------- */
+.admin {
+	display: flex;
+	background: #f9f9f9;
+	min-height: 100vh;
+	/* background: #1d3a50; */
+}
+
+.admin__content-container {
+	max-width: 1400px;
+	padding: 25px 25px;
+}
+
+/* ---------- sidebar ---------- */
+.admin__sidebar {
+	background: #032234;
+	color: white;
+	width: 20%;
+	padding: 25px 25px;
+}
+
+.admin__sidebar-content {
+	float: right;
+	text-align: end;
+}
+
+.admin__sidebar-logo {
+	margin-bottom: 20px;
+}
+
+.admin__sidebar ul {
+	display: flex;
+	flex-direction: column;
+}
+
+.admin__sidebar li {
+	margin: 5px 0;
+}
+
+.admin__sidebar a {
+	color: white;
+}
+
+.admin__sidebar a:hover {
+	color: #aeafa6;
+}
+
+/* ---------- content ---------- */
+.admin__content {
+	width: 80%;
+	background: url(/img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
 /* ---------- filter ---------- */
 .filter {
 	/* padding: 8px; */
@@ -204,7 +260,7 @@ input[type='submit']:hover {
 	/* width: 20%; */
 	margin: 10px;
 	border-radius: 2px;
-	padding: 10px;
+	padding: 25px;
 
 	/* background-color: #507c9b; */
 	/* color: #b9d0e0; */
