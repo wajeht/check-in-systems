@@ -36,9 +36,9 @@
 					<div class="admin__sidebar-menu">
 						<ul>
 							<li><a class="active" href="/admin.html">admin</a></li>
-							<li><a href="/dashboard.html">dashboard</a></li>
-							<li><a href="#">account</a></li>
+							<li><a href="/">check-in</a></li>
 							<li><a href="#">setting</a></li>
+							<li><a href="#">logout</a></li>
 						</ul>
 						<ul class="admin__sidebar-footer">
 							<h3>links</h3>
@@ -69,122 +69,251 @@
 								<input type="submit" value="Search" id="search_btn" />
 							</form>
 						</div>
-						<div>
+						<div class="splitter">
 							<select name="options" id="options">
-								<option selected>options</option>
-								<option value="volvo">Volvo</option>
-								<option value="saab">Saab</option>
-								<option value="opel">Opel</option>
-								<option value="audi">Audi</option>
+								<option selected>who</option>
+								<option value="all">all</option>
+								<option value="guest">guest</option>
+								<option value="student">student</option>
 							</select>
-						</div>
-						<div>
 							<select name="options" id="options">
-								<option selected>options</option>
-								<option value="volvo">Volvo</option>
-								<option value="saab">Saab</option>
-								<option value="opel">Opel</option>
-								<option value="audi">Audi</option>
+								<option selected>date</option>
+								<option value="today">today</option>
+								<option value="this-week">this week</option>
+								<option value="this-month">this month</option>
+								<option value="this-year">this year</option>
 							</select>
-						</div>
-						<div>
 							<select name="options" id="options">
-								<option selected>options</option>
-								<option value="volvo">Volvo</option>
-								<option value="saab">Saab</option>
-								<option value="opel">Opel</option>
-								<option value="audi">Audi</option>
+								<option selected>sort</option>
+								<option value="a-z">a-z</option>
+								<option value="z-a">z-a</option>
+								<option value="time">time</option>
+								<option value="duration">duration</option>
 							</select>
+							<input type="submit" />
 						</div>
 					</div>
 					<div class="admin__content-scroll">
+						<!-- ---------- charts ---------- -->
 						<div class="card">
 							<canvas id="bar-chart" width="800" height="450"></canvas>
 						</div>
-						<div class="card">
-							<canvas id="line-chart" width="800" height="450"></canvas>
-						</div>
-						<div class="card">
-							<canvas id="pie-chart" width="800" height="450"></canvas>
-						</div>
-						<div class="card">
-							<canvas id="radar-chart" width="800" height="600"></canvas>
-						</div>
 
-						<div class="card">
-							<p>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
-								incidunt impedit quia necessitatibus ullam reprehenderit
-								distinctio, aut maxime velit odit, cum repellendus, fugiat
-								facilis molestiae ratione delectus ad eius consequuntur?
-							</p>
-							<br />
-							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-								Voluptate, facere laudantium! Ullam quod nemo temporibus. Et
-								corporis ad neque ab recusandae distinctio enim porro molestias
-								fuga esse. Adipisci, incidunt corrupti? Lorem ipsum, dolor sit
-								amet consectetur adipisicing elit. Quidem blanditiis, et
-								quibusdam obcaecati quam facere officia labore, eos minima
-								perspiciatis ad? Pariatur et aperiam dolorum eos optio, ducimus
-								nihil ullam?
-							</p>
-							<br />
-							<p>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
-								incidunt impedit quia necessitatibus ullam reprehenderit
-								distinctio, aut maxime velit odit, cum repellendus, fugiat
-								facilis molestiae ratione delectus ad eius consequuntur?
-							</p>
-							<br />
-							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-								Voluptate, facere laudantium! Ullam quod nemo temporibus. Et
-								corporis ad neque ab recusandae distinctio enim porro molestias
-								fuga esse. Adipisci, incidunt corrupti? Lorem ipsum, dolor sit
-								amet consectetur adipisicing elit. Quidem blanditiis, et
-								quibusdam obcaecati quam facere officia labore, eos minima
-								perspiciatis ad? Pariatur et aperiam dolorum eos optio, ducimus
-								nihil ullam?
-							</p>
-						</div>
+						<div class="admin__card">
+							<div class="grid">
+								<!-- ---------- card 1 ---------- -->
+								<div class="card">
+									<div class="card__splitter">
+										<div class="card__left-col center-v-h">
+											<img
+												src="https://dummyimage.com/400x400/b5b5b5/000000.jpg&text=card+1"
+												alt=""
+											/>
+										</div>
+										<div class="card__content card__right-col center-v-h">
+											<div class="card__content-title">
+												<h3>soapwa</h3>
+												<p>student</p>
+											</div>
+											<div class="card__content-description">
+												<p>
+													<span
+														class="iconify"
+														data-icon="mdi-light:account"
+														data-inline="false"
+													></span>
+													k0460052
+												</p>
+												<p>
+													<span
+														class="iconify"
+														data-icon="mdi-light:play"
+														data-inline="false"
+													></span>
+													0:00
+												</p>
+												<p>
+													<span
+														class="iconify"
+														data-icon="mdi-light:alert-circle"
+														data-inline="false"
+													></span>
+													0:00
+												</p>
+												<p>
+													<span
+														class="iconify"
+														data-icon="mdi-light:chart-areaspline"
+														data-inline="false"
+													></span>
+													0:00
+												</p>
+											</div>
+										</div>
+									</div>
+									<span
+										class="iconify card__close"
+										data-icon="ic:sharp-close"
+										data-inline="false"
+									></span>
+								</div>
 
-						<div class="card">
-							<p>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
-								incidunt impedit quia necessitatibus ullam reprehenderit
-								distinctio, aut maxime velit odit, cum repellendus, fugiat
-								facilis molestiae ratione delectus ad eius consequuntur?
-							</p>
-							<br />
-							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-								Voluptate, facere laudantium! Ullam quod nemo temporibus. Et
-								corporis ad neque ab recusandae distinctio enim porro molestias
-								fuga esse. Adipisci, incidunt corrupti? Lorem ipsum, dolor sit
-								amet consectetur adipisicing elit. Quidem blanditiis, et
-								quibusdam obcaecati quam facere officia labore, eos minima
-								perspiciatis ad? Pariatur et aperiam dolorum eos optio, ducimus
-								nihil ullam?
-							</p>
-							<br />
-							<p>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
-								incidunt impedit quia necessitatibus ullam reprehenderit
-								distinctio, aut maxime velit odit, cum repellendus, fugiat
-								facilis molestiae ratione delectus ad eius consequuntur?
-							</p>
-							<br />
-							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-								Voluptate, facere laudantium! Ullam quod nemo temporibus. Et
-								corporis ad neque ab recusandae distinctio enim porro molestias
-								fuga esse. Adipisci, incidunt corrupti? Lorem ipsum, dolor sit
-								amet consectetur adipisicing elit. Quidem blanditiis, et
-								quibusdam obcaecati quam facere officia labore, eos minima
-								perspiciatis ad? Pariatur et aperiam dolorum eos optio, ducimus
-								nihil ullam?
-							</p>
+								<!-- ---------- card 2 ---------- -->
+								<div class="card">
+									<div class="card__splitter">
+										<div class="card__left-col center-v-h">
+											<img
+												src="https://dummyimage.com/400x400/b5b5b5/000000.jpg&text=card+1"
+												alt=""
+											/>
+										</div>
+										<div class="card__content card__right-col center-v-h">
+											<div class="card__content-title">
+												<h3>soapwa</h3>
+												<p>student</p>
+											</div>
+											<div class="card__content-description">
+												<p>
+													<span
+														class="iconify"
+														data-icon="mdi-light:account"
+														data-inline="false"
+													></span>
+													k0460052
+												</p>
+												<p>
+													<span
+														class="iconify"
+														data-icon="mdi-light:play"
+														data-inline="false"
+													></span>
+													0:00
+												</p>
+												<p>
+													<span
+														class="iconify"
+														data-icon="mdi-light:alert-circle"
+														data-inline="false"
+													></span>
+													0:00
+												</p>
+												<p>
+													<span
+														class="iconify"
+														data-icon="mdi-light:chart-areaspline"
+														data-inline="false"
+													></span>
+													0:00
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- ---------- card 3 ---------- -->
+								<div class="card">
+									<div class="card__splitter">
+										<div class="card__left-col center-v-h">
+											<img
+												src="https://dummyimage.com/400x400/b5b5b5/000000.jpg&text=card+1"
+												alt=""
+											/>
+										</div>
+										<div class="card__content card__right-col center-v-h">
+											<div class="card__content-title">
+												<h3>soapwa</h3>
+												<p>student</p>
+											</div>
+											<div class="card__content-description">
+												<p>
+													<span
+														class="iconify"
+														data-icon="mdi-light:account"
+														data-inline="false"
+													></span>
+													k0460052
+												</p>
+												<p>
+													<span
+														class="iconify"
+														data-icon="mdi-light:play"
+														data-inline="false"
+													></span>
+													0:00
+												</p>
+												<p>
+													<span
+														class="iconify"
+														data-icon="mdi-light:alert-circle"
+														data-inline="false"
+													></span>
+													0:00
+												</p>
+												<p>
+													<span
+														class="iconify"
+														data-icon="mdi-light:chart-areaspline"
+														data-inline="false"
+													></span>
+													0:00
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- ---------- card 4 ---------- -->
+								<div class="card">
+									<div class="card__splitter">
+										<div class="card__left-col center-v-h">
+											<img
+												src="https://dummyimage.com/400x400/b5b5b5/000000.jpg&text=card+1"
+												alt=""
+											/>
+										</div>
+										<div class="card__content card__right-col center-v-h">
+											<div class="card__content-title">
+												<h3>soapwa</h3>
+												<p>student</p>
+											</div>
+											<div class="card__content-description">
+												<p>
+													<span
+														class="iconify"
+														data-icon="mdi-light:account"
+														data-inline="false"
+													></span>
+													k0460052
+												</p>
+												<p>
+													<span
+														class="iconify"
+														data-icon="mdi-light:play"
+														data-inline="false"
+													></span>
+													0:00
+												</p>
+												<p>
+													<span
+														class="iconify"
+														data-icon="mdi-light:alert-circle"
+														data-inline="false"
+													></span>
+													0:00
+												</p>
+												<p>
+													<span
+														class="iconify"
+														data-icon="mdi-light:chart-areaspline"
+														data-inline="false"
+													></span>
+													0:00
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -192,6 +321,7 @@
 		</div>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+		<script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
 		<script src="js/chart-config.js"></script>
 	</body>
 </html>
