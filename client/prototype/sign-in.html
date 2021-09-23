@@ -36,7 +36,7 @@
 					</div>
 					<ul class="header__nav-ul">
 						<li class="header__nav-ul-li">
-							<a href="/admin.html">admin</a>
+							<a href="/sign-in.html">admin</a>
 						</li>
 					</ul>
 				</nav>
@@ -58,10 +58,12 @@
 								></span>
 							</div>
 						</div>
-            <form action="#">
-              <input type="email" placeholder="email" required>
-              <input type="password" placeholder="password" required>
-              <input type="submit" value="sign in">
+            <form  method="post" onsubmit="return signIn()">
+							<label for="email">admin@test.com</label>
+              <input type="email" placeholder="email" id="admin__email" required>
+							<label for="password">pass123</label>
+              <input type="password" placeholder="password" id="admin__password" required>
+              <input type="submit" value="sign in" id="admin__submit__button" onsubmit="return signIn();">
               <div class="splitter space-between">
                 <div>
                   <input type="checkbox" name="remember-me" id="remember-me" value="isRemember">
