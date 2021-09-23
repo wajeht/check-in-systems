@@ -1,4 +1,8 @@
 @media (max-width: 60em) {
+	.grid {
+		grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+	}
+
 	.main__hero__card {
 		width: 100%;
 	}
@@ -45,6 +49,11 @@
 	.admin__content-container {
 		overflow: auto;
 		height: 100%;
+	}
+
+	.admin__content-setting {
+		display: flex;
+		flex-direction: column;
 	}
 
 	.admin__sidebar-logo {
