@@ -4,13 +4,17 @@
 
 <p align="center">check-in systems for local community college computer lab to track student visit during covid period!</p>
 
-# Prototype
+# 📺 Prototype
 
 ```
-https://check-in-systems.netlify.app/
+https://check-in-systems.jaw.dev/
 ```
 
-# Contribute
+# ⚠️ Depreciated
+
+This codebase is no longer actively maintained. The package will continue working, but support and changes are no longer provided.
+
+# 👥 Contribute
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are greatly appreciated.
 
@@ -20,6 +24,6 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
 
-# License
+# ©️ License
 
 Distributed under the MIT License © [wajeht](https://www.github.com/wajeht/). See LICENSE for more information.
