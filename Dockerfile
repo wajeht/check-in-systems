@@ -8,8 +8,6 @@ RUN rm -rf ./*
 
 COPY ./* ./
 
-COPY nginx.conf /etc/nginx/nginx.conf
-
 HEALTHCHECK CMD curl -f http://localhost/ || exit 1
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
