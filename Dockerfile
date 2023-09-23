@@ -10,6 +10,6 @@ COPY ./* ./
 
 COPY nginx.conf /etc/nginx/nginx.conf
 
-HEALTHCHECK CMD curl -f http://localhost:8084/ || exit 1
+HEALTHCHECK CMD curl -f http://localhost/ || exit 1
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
